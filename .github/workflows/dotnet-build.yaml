@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore **/*.csproj
 
       - name: Compilar a aplicação
-        run: dotnet build --configuration Release
+        run: dotnet build **/*.csproj --configuration Release
 
       - name: Executar testes (script personalizado)
         run: dotnet test --no-build --verbosity normal
