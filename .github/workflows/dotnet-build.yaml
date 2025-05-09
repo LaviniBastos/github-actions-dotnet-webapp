@@ -27,4 +27,4 @@ jobs:
         run: dotnet build **/*.csproj --configuration Release
 
       - name: Executar testes (script personalizado)
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test **/*.csproj --no-build --verbosity normal
