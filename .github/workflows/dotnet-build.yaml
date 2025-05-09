@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '8.0.x' 
 
       - name: Restaurar dependências
-        run: dotnet restore
+        run: dotnet restore src/github4women.csproj
 
       - name: Compilar a aplicação
         run: dotnet build --configuration Release
